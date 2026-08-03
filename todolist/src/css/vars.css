@@ -1,9 +1,6 @@
 :root {
-  --primary-color: #3498db;
-}
+  --primary-color: #6364dd;
 
-.test {
-  height: 100px;
-  width: 100px;
-  background-color: var(--primary-color);
+  --box-shadow-color: #959da533;
+  --box-shadow-hover-color: #00000059;
 }

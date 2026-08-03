@@ -1,0 +1,32 @@
+#app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+#nav-bar-container {
+  width: 15%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+#main-container {
+  width: 60%;
+  height: 100%;
+  background-color: lightgreen;
+}
+
+#overview-container {
+  width: 25%;
+  height: 100%;
+  background-color: lightyellow;
+}
+
+.base-box-shadow {
+  box-shadow: var(--box-shadow-color) 0px 8px 24px;
+}
+
+.base-box-shadow:hover {
+  box-shadow: var(--box-shadow-hover-color) 0px 5px 15px;
+}
