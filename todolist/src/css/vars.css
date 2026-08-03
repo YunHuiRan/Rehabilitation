@@ -1,0 +1,9 @@
+:root {
+  --primary-color: #3498db;
+}
+
+.test {
+  height: 100px;
+  width: 100px;
+  background-color: var(--primary-color);
+}
