@@ -16,16 +16,16 @@
 import { defineAsyncComponent } from "vue";
 
 const allTask = defineAsyncComponent(
-  () => import("@/assets/taskIcons/allTask.vue"),
+  () => import("@/assets/taskIcons/allTaskIcon.vue"),
 );
 const pendingTask = defineAsyncComponent(
-  () => import("@/assets/taskIcons/pendingTask.vue"),
+  () => import("@/assets/taskIcons/pendingTaskIcon.vue"),
 );
 const inProgressTask = defineAsyncComponent(
-  () => import("@/assets/taskIcons/InProgressTask.vue"),
+  () => import("@/assets/taskIcons/InProgressTaskIcon.vue"),
 );
 const completedTask = defineAsyncComponent(
-  () => import("@/assets/taskIcons/completedTask.vue"),
+  () => import("@/assets/taskIcons/completedTaskIcon.vue"),
 );
 
 type taskInfos = {

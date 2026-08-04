@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="select-none mb-2 p-2">priority</h2>
+    <h2 class="select-none mb-2 p-2">tags</h2>
 
     <div
       v-for="(priority, index) in priorityStats"
@@ -18,25 +18,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { defineAsyncComponent } from "vue";
-
-const priorityFlag = defineAsyncComponent(
-  () => import("@/assets/priority/priorityFlagIcon.vue"),
-);
-
-type priorityInfo = {
-  level: "high" | "medium" | "low";
-  label: "high priority" | "medium priority" | "low priority";
-  taskCount: number;
-};
-
-const priorityStats: priorityInfo[] = [
-  { level: "high", label: "high priority", taskCount: 5 },
-  { level: "medium", label: "medium priority", taskCount: 10 },
-  { level: "low", label: "low priority", taskCount: 15 },
-];
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .priority-container {
