@@ -3,22 +3,39 @@
     <h2 class="select-none mb-2 p-2">tags</h2>
 
     <div
-      v-for="(priority, index) in priorityStats"
+      v-for="(tag, index) in tagStats"
       :key="index"
       class="priority-container"
     >
       <div class="flex gap-2">
-        <priorityFlag :level="priority.level" class="w-6" />
+        <tagIcon :color="tag.color" class="w-6"></tagIcon>
 
-        <span>{{ priority.label }}</span>
+        <span>{{ tag.tagName }}</span>
       </div>
 
-      <span>{{ priority.taskCount }}</span>
+      <span>{{ tag.taskCount }}</span>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineAsyncComponent } from "vue";
+
+const tagIcon = defineAsyncComponent(() => import("@/assets/tag/tagIcon.vue"));
+
+type tagInfo = {
+  color: string;
+  tagName: string;
+  taskCount: number;
+};
+
+const tagStats: tagInfo[] = [
+  { color: "#6EB6FA", tagName: "study", taskCount: 5 },
+  { color: "#9A6AE9", tagName: "work", taskCount: 10 },
+  { color: "#5DC9AC", tagName: "personal", taskCount: 15 },
+  { color: "#C4C8CB", tagName: "other", taskCount: 15 },
+];
+</script>
 
 <style scoped>
 .priority-container {

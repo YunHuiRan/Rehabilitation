@@ -8,24 +8,9 @@
 </template>
 
 <script setup lang="ts">
-let iconColor:
-  | "var(--high-priority-color)"
-  | "var(--medium-priority-color)"
-  | "var(--low-priority-color)";
-
 const props = defineProps<{
-  level: "high" | "medium" | "low";
+  color: string;
 }>();
 
-switch (props.level) {
-  case "high":
-    iconColor = "var(--high-priority-color)";
-    break;
-  case "medium":
-    iconColor = "var(--medium-priority-color)";
-    break;
-  case "low":
-    iconColor = "var(--low-priority-color)";
-    break;
-}
+const iconColor = props.color || "#409EFF";
 </script>
