@@ -1,5 +1,6 @@
 :root {
   --primary-color: #6364dd;
+  --primary-color-light: #6364dd20;
 
   --card-shadow:
     rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
