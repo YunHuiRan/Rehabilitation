@@ -29,5 +29,3 @@
 <script setup lang="ts">
 const iconColor = "#6364dd";
 </script>
-
-<style></style>

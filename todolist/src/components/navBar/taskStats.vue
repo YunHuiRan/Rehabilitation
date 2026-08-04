@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full">
+  <div>
     <div v-for="task in taskStats" :key="task.name" class="base-task">
       <div class="flex gap-2">
         <component :is="task.component"></component>

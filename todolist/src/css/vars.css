@@ -10,4 +10,8 @@
 
   --logo-circle-color: var(--primary-color);
   --logo-check-color: white;
+
+  --high-priority-color: #f56c6c;
+  --medium-priority-color: #e6a23c;
+  --low-priority-color: #67c23a;
 }

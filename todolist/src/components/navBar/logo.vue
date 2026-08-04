@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-6 flex flex-row justify-start items-center gap-4">
+  <div class="h-6 flex flex-row justify-start items-center gap-4">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" class="w-8 h-8">
       <circle cx="32" cy="32" r="28" fill="var(--logo-circle-color)" />
 

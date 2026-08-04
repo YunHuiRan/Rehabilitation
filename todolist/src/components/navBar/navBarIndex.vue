@@ -3,6 +3,8 @@
     <logo />
 
     <taskStats />
+
+    <priority />
   </div>
 </template>
 
@@ -11,6 +13,7 @@ import { defineAsyncComponent } from "vue";
 
 const logo = defineAsyncComponent(() => import("./logo.vue"));
 const taskStats = defineAsyncComponent(() => import("./taskStats.vue"));
+const priority = defineAsyncComponent(() => import("./priority.vue"));
 </script>
 
 <style></style>
