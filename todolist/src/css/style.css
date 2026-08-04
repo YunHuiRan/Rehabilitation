@@ -1,32 +1,35 @@
+html,
+body,
+#app {
+  min-height: 100%;
+}
+
 #app {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  background-color: lightgray;
+  gap: 15px;
+  min-height: 100dvh;
+  padding: 10px;
+}
+
+#app > * {
+  background-color: white;
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
 }
 
 #nav-bar-container {
+  min-height: 100dvh;
   width: 15%;
-  height: 100%;
-  background-color: lightblue;
 }
 
 #main-container {
+  min-height: 100dvh;
   width: 60%;
-  height: 100%;
-  background-color: lightgreen;
 }
 
 #overview-container {
+  min-height: 100dvh;
   width: 25%;
-  height: 100%;
-  background-color: lightyellow;
-}
-
-.base-box-shadow {
-  box-shadow: var(--box-shadow-color) 0px 8px 24px;
-}
-
-.base-box-shadow:hover {
-  box-shadow: var(--box-shadow-hover-color) 0px 5px 15px;
 }

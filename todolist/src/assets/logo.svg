@@ -1,0 +1,26 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ width="64"
+ height="64"
+ viewBox="0 0 64 64"
+>
+  <circle
+    cx="32"
+    cy="32"
+    r="28"
+    fill="var(--logo-circle-color)"
+  />
+
+  <path
+    fill="var(--logo-check-color)"
+    d="
+      M 20 32
+      L 27 39
+      L 44 20
+      L 46 22
+      L 27 43
+      L 18 34
+      Z
+    "
+  />
+</svg>

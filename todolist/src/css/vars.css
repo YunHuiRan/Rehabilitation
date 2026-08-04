@@ -1,6 +1,12 @@
 :root {
   --primary-color: #6364dd;
 
-  --box-shadow-color: #959da533;
-  --box-shadow-hover-color: #00000059;
+  --card-shadow:
+    rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  --card-border-radius: 20px;
+  --card-padding: 10px;
+
+  --logo-circle-color: var(--primary-color);
+  --logo-check-color: white;
 }
