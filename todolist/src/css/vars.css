@@ -6,7 +6,7 @@
     rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   --card-border-radius: 20px;
-  --card-padding: 10px;
+  --card-padding: 1rem;
 
   --logo-circle-color: var(--primary-color);
   --logo-check-color: white;
@@ -14,4 +14,7 @@
   --high-priority-color: #f56c6c;
   --medium-priority-color: #e6a23c;
   --low-priority-color: #67c23a;
+
+  --item-border-radius: 15px;
+  --item-transition: all 0.1s ease-in-out;
 }

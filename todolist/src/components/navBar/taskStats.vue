@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="task in taskStats" :key="task.name" class="base-task">
+    <div v-for="task in taskStats" :key="task.name" class="task-container">
       <div class="flex gap-2">
         <component :is="task.component"></component>
 
@@ -59,19 +59,23 @@ const taskStats: taskInfos[] = [
 </script>
 
 <style scoped>
-.base-task {
+.task-container {
   width: 100%;
   padding: 0.5rem;
-  margin-bottom: 0.7rem;
   display: flex;
-  background-color: var(--primary-color-light);
+  gap: 0.7rem;
+  margin-bottom: 0.2rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0.5rem;
+  border-radius: var(--item-border-radius);
+  transition: var(--item-transition);
+  user-select: none;
 }
 
-.base-task:hover {
+.task-container:hover {
+  box-shadow: var(--card-shadow);
+  background-color: var(--primary-color-light);
   cursor: pointer;
 }
 </style>

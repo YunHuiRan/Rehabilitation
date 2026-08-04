@@ -16,7 +16,10 @@
 </template>
 
 <script setup lang="ts">
-let iconColor: string = "";
+let iconColor:
+  | "var(--high-priority-color)"
+  | "var(--medium-priority-color)"
+  | "var(--low-priority-color)";
 
 const props = defineProps<{
   level: "high" | "medium" | "low";
