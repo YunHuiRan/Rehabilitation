@@ -16,15 +16,15 @@
 import { defineAsyncComponent } from "vue";
 
 const navBarIndex = defineAsyncComponent(
-  () => import("./components/navBar/navBarIndex.vue"),
+  () => import("@/components/navBar/navBarIndex.vue"),
 );
 
 const mainIndex = defineAsyncComponent(
-  () => import("./components/main/mainIndex.vue"),
+  () => import("@/components/main/mainIndex.vue"),
 );
 
 const overviewInfo = defineAsyncComponent(
-  () => import("./components/overviewInfo/overviewInfo.vue"),
+  () => import("@/components/overviewInfo/overviewInfo.vue"),
 );
 </script>
 
