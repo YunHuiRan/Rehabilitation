@@ -27,14 +27,14 @@ const priorityFlag = defineAsyncComponent(
 
 type priorityInfo = {
   level: "high" | "medium" | "low";
-  label: "high priority" | "medium priority" | "low priority";
+  label: "high" | "medium" | "low";
   taskCount: number;
 };
 
 const priorityStats: priorityInfo[] = [
-  { level: "high", label: "high priority", taskCount: 5 },
-  { level: "medium", label: "medium priority", taskCount: 10 },
-  { level: "low", label: "low priority", taskCount: 15 },
+  { level: "high", label: "high", taskCount: 5 },
+  { level: "medium", label: "medium", taskCount: 10 },
+  { level: "low", label: "low", taskCount: 15 },
 ];
 </script>
 
