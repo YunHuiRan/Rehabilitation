@@ -6,7 +6,7 @@
 
     <priority></priority>
 
-    <commonButton :button-icon="'+'" button-name="Add Task"></commonButton>
+    <commonButton button-name="Add Task"></commonButton>
   </div>
 </template>
 

@@ -8,8 +8,6 @@
       color: props.color ? props.color : 'white',
     }"
   >
-    <slot name="buttonIcon">{{ props.buttonIcon }} </slot>
-
     <slot name="buttonName">{{ props.buttonName }}</slot>
   </button>
 </template>
@@ -17,7 +15,6 @@
 <script setup lang="ts">
 const props = defineProps<{
   buttonName: string;
-  buttonIcon?: string;
   width?: string;
   height?: string;
   color?: string;
