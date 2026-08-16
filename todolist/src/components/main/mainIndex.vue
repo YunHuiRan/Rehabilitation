@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-6 h-full">
     <taskHeader></taskHeader>
 
-    <taskBreadcrumb></taskBreadcrumb>
+    <taskItem></taskItem>
   </div>
 </template>
 
@@ -10,9 +10,7 @@
 import { defineAsyncComponent } from "vue";
 
 const taskHeader = defineAsyncComponent(() => import("./taskHeader.vue"));
-const taskBreadcrumb = defineAsyncComponent(
-  () => import("./taskBreadcrumb.vue"),
-);
+const taskItem = defineAsyncComponent(() => import("./taskItem.vue"));
 </script>
 
 <style></style>
